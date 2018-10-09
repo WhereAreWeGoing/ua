@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>userAgent | UA</title>
+        <style>
+        body { font-family: 'Source Sans Pro', "Droid Sans", Helvetica, Arial, sans-serif; background-color: #f6f4f1; height: 100vh; margin: 0; padding: 0;}
+        .container { position: relative; top: 50%; transform: translateY(-50%); }
+        h1 { text-align: center; }
+        .uagent { padding: 1em; border: 1px solid #ccc; border-radius: 8px; color: #333; background-color: #fff; max-width: 768px; margin: 0 auto; word-wrap: break-word; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 style="display: none;">Your userAgent is:</h1>
+            <div class="uagent">
+                <script>
+                var uagent =  navigator.userAgent;
+                document.write("<h1>"+uagent+"</h1>");
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
